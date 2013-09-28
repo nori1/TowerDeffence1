@@ -1,0 +1,7 @@
+# Contains ideas for the next project.
+
+- Time based updates;
+- Two separate game loops. One for logic/updates other for drawing/handling input.
+- Has to have server side validation.
+- Graphics?
+- 

@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ffffff;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#ad-header, #ad-footer {
+	background: #F7F7F9;
+	border: 1px solid #dedede;
+	border-radius: 5px;
+	margin: 10px auto;
+}
+
+#canvas-background {
+	display: none;
+}
+	
+#canvas-main {
+	border: 1px solid #CFCFCF;
+	border-radius: 5px;
+	float: left;
+	padding: 5px;
+}
+
+#game-tower .tower-container {
+	cursor: pointer;
+	float: left;
+	height: 32px;
+	margin: 24px;
+	width: 32px;
+}
+
+#ad-sidebar {
+	float: left;
+	height: 534px;
+	margin-left: 10px;
+	padding: 10px 6px;
+	width: 170px;
+}
+
+.ad-container {
+	width: 170px;
+	height: 170px;
+}
+
+/*
+ * Bootstrap custom.
+ */
+ 
+ .alert-block {
+	 margin: 10px;
+ }
+ 
+ .row {
+	 margin: 10px 0;
+ }
+ 
+ .row iframe {
+	 float: left;
+	 margin-left: 10px;
+ }
+ 
+ #modal-license, #moda {
+	 font-family: Consolas, monaco, monospace;
+ }
+ 
+/*
+ * http://hellohappy.org/css3-buttons/
+ */
+div.indent {
+	background-color: #e2e2e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e2e2e2), color-stop(100%, #fafafa));
+	background-image: -webkit-linear-gradient(top, #e2e2e2, #fafafa);
+	background-image: -moz-linear-gradient(top, #e2e2e2, #fafafa);
+	background-image: -ms-linear-gradient(top, #e2e2e2, #fafafa);
+	background-image: -o-linear-gradient(top, #e2e2e2, #fafafa);
+	background-image: linear-gradient(top, #e2e2e2, #fafafa);
+	border-bottom: 1px solid #e7e7e7;
+	border-left: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+	border-top: 1px solid #dfdfdf;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	width: 145px;
+}
+
+button.game-button {
+	background-color: #f3f3f3;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f3f3), color-stop(50%, #dddddd), color-stop(50%, #d2d2d2), color-stop(100%, #dfdfdf));
+	background-image: -webkit-linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+	background-image: -moz-linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+	background-image: -ms-linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+	background-image: -o-linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+	background-image: linear-gradient(top, #f3f3f3 0%, #dddddd 50%, #d2d2d2 50%, #dfdfdf 100%);
+	border-top: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #b4b4b4;
+	border-left: 1px solid #b4b4b4;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+	-moz-box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+	box-shadow: inset 0 1px 0 0 white, 0 1px 0 0 #d5d5d5, 0 -1px 2px 1px #efefef;
+	color: #666;
+	font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
+	height: 23px;
+	line-height: 20px;
+	margin: 0;
+	text-shadow: 0 1px 1px #fff;
+	width: 145px; 
+}
+
+ button.game-button:hover {
+	background-color: #e5e5e5;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(50%, #d1d1d1), color-stop(50%, #c4c4c4), color-stop(100%, #b8b8b8));
+	background-image: -webkit-linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+	background-image: -moz-linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+	background-image: -ms-linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+	background-image: -o-linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+	background-image: linear-gradient(top, #e5e5e5 0%, #d1d1d1 50%, #c4c4c4 50%, #b8b8b8 100%);
+	-webkit-box-shadow: inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3;
+	-moz-box-shadow: inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3;
+	box-shadow: inset 0 1px 0 0 #f2f2f2, 0 1px 0 0 #c9c9c9, 0 -1px 2px 1px #e3e3e3;
+	cursor: pointer;
+ }
+button.game-button:active {
+	-webkit-box-shadow: inset 0 0 30px 0 #999999, 0 1px 0 0 white;
+	-moz-box-shadow: inset 0 0 30px 0 #999999, 0 1px 0 0 white;
+	box-shadow: inset 0 0 30px 0 #999999, 0 1px 0 0 white; 
+}
+
+button.disabled, button.disabled:hover, button.disabled:active {
+	background: #989898;
+	background: -moz-linear-gradient(top,  #989898 0%, #878787 50%, #767676 51%, #656565 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#989898), color-stop(50%,#878787), color-stop(51%,#767676), color-stop(100%,#656565));
+	background: -webkit-linear-gradient(top,  #989898 0%,#878787 50%,#767676 51%,#656565 100%);
+	background: -o-linear-gradient(top,  #989898 0%,#878787 50%,#767676 51%,#656565 100%);
+	background: -ms-linear-gradient(top,  #989898 0%,#878787 50%,#767676 51%,#656565 100%);
+	background: linear-gradient(to bottom,  #989898 0%,#878787 50%,#767676 51%,#656565 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#989898', endColorstr='#656565',GradientType=0 );
+	box-shadow: inset 0 1px 0 0 #777777, 0 1px 0 0 #999999, 0 -1px 2px 1px #aaaaaa;
+	color: #ddddff;
+	cursor: auto;
+	text-shadow: 0 1px 1px #000;
+}
+
+h1.mega-title {
+	color: #dadada;
+	font-size: 84px;
+	line-height: 96px;
+	margin: 0;
+	text-align: center;
+	text-shadow: 
+		0 1px 0 #ccc,
+		0 2px 0 #c9c9c9,
+		0 3px 0 #bbb,
+		0 4px 0 #b9b9b9,
+		0 5px 0 #aaa,
+		0 6px 1px rgba(0,0,0,.1),
+		0 0 5px rgba(0,0,0,.1),
+		0 1px 3px rgba(0,0,0,.3),
+		0 3px 5px rgba(0,0,0,.2),
+		0 5px 10px rgba(0,0,0,.25),
+		0 10px 10px rgba(0,0,0,.2),
+		0 20px 20px rgba(0,0,0,.15);
+}
+
